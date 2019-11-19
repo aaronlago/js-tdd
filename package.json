@@ -2,8 +2,10 @@
   "name": "js-tdd-curso",
   "version": "1.0.0",
   "description": "Biblioteca JS com TDD na prática",
-  "main": "index.js",
+  "main": "src/*.js",
   "scripts": {
+    "lint": ".eslint ./src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,22 @@
   "bugs": {
     "url": "https://github.com/aaronlago/js-tdd/issues"
   },
-  "homepage": "https://github.com/aaronlago/js-tdd#readme"
+  "homepage": "https://github.com/aaronlago/js-tdd#readme",
+  "dependencies": {
+    "gitignorer": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1"
+  }
 }
